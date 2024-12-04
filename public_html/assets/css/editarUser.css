@@ -1,0 +1,92 @@
+/* Estilo global */
+body {
+    background-color: #121212; /* Escuro para o fundo geral */
+    color: #ddd; /* Texto claro para contraste */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container principal */
+.container {
+    background-color: #1f1f1f; /* Fundo mais escuro para a área do formulário */
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Títulos */
+h3 {
+    color: #4e90f2; /* Azul claro */
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Mensagens de erro */
+.alert-danger {
+    background-color: #ff6b6b; /* Vermelho claro */
+    border-color: #ff3b3b;
+    color: white;
+}
+
+/* Formulário */
+.form-label {
+    color: #b0b0b0; /* Cor clara para os labels */
+    font-weight: bold;
+}
+
+/* Campos de entrada */
+input[type="text"],
+input[type="password"],
+textarea,
+input[type="file"] {
+    background-color: #2d2d2d; /* Fundo escuro para inputs */
+    color: #f0f0f0; /* Texto claro */
+    border: 1px solid #444; /* Borda suave */
+    border-radius: 5px;
+    padding: 12px;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+input[type="file"]:focus {
+    border-color: #4e90f2; /* Borda azul quando em foco */
+    outline: none;
+    box-shadow: 0 0 8px rgba(78, 144, 242, 0.6);
+}
+
+/* Texto de erro nos campos */
+.text-danger {
+    color: #f44336; /* Vermelho escuro para mensagens de erro */
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Botão de envio */
+.btn-primary {
+    background-color: #4e90f2; /* Azul claro */
+    border-color: #4e90f2;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #3578e5; /* Azul mais escuro no hover */
+    transform: translateY(-2px);
+}
+
+.btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(78, 144, 242, 0.6);
+}
+
+/* Centrando o botão */
+.text-center {
+    margin-top: 20px;
+}

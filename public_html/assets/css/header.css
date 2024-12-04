@@ -1,0 +1,121 @@
+/* Cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e1e; /* Fundo escuro */
+    padding: 20px 30px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.header:hover {
+    background-color: #333; /* Muda o fundo no hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Aumenta a sombra no hover */
+}
+
+
+
+/* Logo */
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #00aaff; /* Cor azul */
+    letter-spacing: 2px;
+    padding-right: 100px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Efeito de animação no logo */
+.logo:hover {
+    transform: scale(1.1); /* Aumenta o logo quando passa o mouse */
+    color: #ffffff; /* Muda a cor do logo no hover */
+}
+
+/* Barra de busca */
+.search-bar {
+    flex: 1;
+    display: flex;
+    position: relative;
+    max-width: 400px; /* Limita a largura da barra de busca */
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Efeito na barra de busca */
+.search-bar input:focus {
+    border-color: #00aaff;  /* Cor azul de destaque no foco */
+    background-color: #444; /* Fundo mais claro ao focar */
+    box-shadow: 0 0 8px rgba(0, 170, 255, 0.6);  /* Brilho sutil */
+}
+
+/* Links de navegação */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 12px 18px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Efeito de hover nos links */
+.nav-links a:hover {
+    color: #00aaff; /* Cor azul nos links no hover */
+    background-color: #444;  /* Fundo mais claro no hover */
+    box-shadow: 0 2px 6px rgba(0, 170, 255, 0.2); /* Efeito de sombra no hover */
+}
+
+/* Menu de usuário */
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.user-menu img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #00aaff; /* Borda azul ao redor da imagem */
+    transition: all 0.3s ease;
+}
+
+.user-menu img:hover {
+    transform: scale(1.1); /* Aumenta a imagem do usuário no hover */
+    border-color: #ffffff; /* Borda branca ao passar o mouse */
+}
+
+/* Animação de transição para o cabeçalho */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+

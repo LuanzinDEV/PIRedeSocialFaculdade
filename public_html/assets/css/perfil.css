@@ -1,0 +1,135 @@
+/* Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Container do Perfil */
+.perfil-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* Cabeçalho do Perfil */
+.perfil-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.perfil-info {
+    display: flex;
+    align-items: center;
+}
+
+.perfil-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.perfil-detalhes {
+    max-width: 500px;
+}
+
+.perfil-nome {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.perfil-email {
+    font-size: 18px;
+    color: #bbb;
+    margin-bottom: 10px;
+}
+
+.perfil-sobre {
+    font-size: 16px;
+    color: #ccc;
+    margin-top: 5px;
+}
+
+.btn-editar {
+    background: linear-gradient(45deg, #6c63ff, #7b59ff);
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-editar:hover {
+    background: linear-gradient(45deg, #7b59ff, #6c63ff);
+    transform: translateY(-5px);
+}
+
+/* Seção de Músicas */
+.perfil-section {
+    margin-top: 50px;
+}
+
+.secao-titulo {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.musicas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.musica-card {
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.musica-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.musica-card strong {
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.musica-card audio {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.musica-data {
+    font-size: 14px;
+    color: #888;
+}
+
