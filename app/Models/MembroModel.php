@@ -9,7 +9,7 @@ class MembroModel extends Model
 {
     use HasFactory;
 
-    protected $table = 'membros_projetos'; // Nome da tabela no banco
+    protected $table = 'membros_projetos';
 
     protected $fillable = [
         'projeto_id',
