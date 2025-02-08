@@ -11,7 +11,7 @@ class UsuarioModel extends Authenticatable
 {
     use HasFactory, Notifiable;
 
-    protected $table = 'usuarios'; // Nome correto da tabela
+    protected $table = 'usuarios'; 
 
     // Campos preenchíveis
     protected $fillable = [
@@ -24,7 +24,6 @@ class UsuarioModel extends Authenticatable
         'sobrenome',
     ];
 
-    // Campos que devem ser tratados como datas
     protected $dates = [
         'data_criacao',
     ];
@@ -48,9 +47,7 @@ class UsuarioModel extends Authenticatable
         return $this->belongsToMany(ProjetoModel::class, 'membros_projetos', 'usuario_id', 'projeto_id');
     }
 
-    /**
-     * Verifica se a senha fornecida corresponde à senha armazenada.
-     */
+ 
     public function verificarSenha(string $senha): bool
     {
         return Hash::check($senha, $this->senha);
