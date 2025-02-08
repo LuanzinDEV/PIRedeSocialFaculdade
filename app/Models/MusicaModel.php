@@ -9,8 +9,7 @@ class MusicaModel extends Model
 {
     use HasFactory;
 
-    protected $table = 'musicas'; // Define a tabela associada ao modelo
-
+    protected $table = 'musicas'; 
     protected $fillable = [
         'titulo',
         'genero',
