@@ -86,13 +86,12 @@ class PerfilController extends Controller
 
     public function show($id)
     {
-        // Busca o usuário pelo ID
+       
         $perfil = UsuarioModel::findOrFail($id);
 
         // Busca músicas associadas ao usuário (se houver)
         $musicas = MusicaModel::where('id', $id)->get();
 
-        // Retorna a view com os dados do perfil e músicas
         return view('perfilBusca', compact('perfil', 'musicas'));
     }
 
