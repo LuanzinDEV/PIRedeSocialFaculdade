@@ -14,7 +14,7 @@ class FeedController extends Controller
     public function store(Request $request, $descricaoAtividade)
     {
         // Não há necessidade de validação de música, pois a descrição é genérica
-        $descricao = auth()->user()->name . ' ' . $descricaoAtividade;  // Mensagem personalizada da atividade
+        $descricao = auth()->user()->name . ' ' . $descricaoAtividade;  
 
         // Criar a atividade no banco de dados
         AtividadeModel::create([
@@ -29,7 +29,7 @@ class FeedController extends Controller
     public function index()
     {
         // Obtém as 10 atividades mais recentes com o nome do usuário
-        $atividades = AtividadeModel::with('usuario')  // Carrega o relacionamento 'usuario'
+        $atividades = AtividadeModel::with('usuario')  
                                    ->orderBy('created_at', 'desc')
                                    ->take(10)
                                    ->get();
